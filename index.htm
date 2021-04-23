@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="style.css">  
+  
+
+    <!--
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"></script>
+
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="./fontawesome-free-5.13.0-web/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Advent+Pro|Alfa+Slab+One|Anton|Archivo+Narrow|Baloo+2|Baloo+Chettan+2|Bellota|BenchNine|Caveat|Cinzel|Comfortaa|Concert+One|Cookie|Damion|Dancing+Script|Dosis|Electrolize|Fredoka+One|Great+Vibes|Indie+Flower|Inter|Josefin+Sans|Josefin+Slab|Kaushan+Script|Lato|Lobster|Luckiest+Guy|Monoton|Montserrat|Open+Sans|Oswald|Oxanium|PT+Sans+Caption|Pacifico|Parisienne|Passion+One|Poiret+One|Poppins|Quattrocento+Sans|Raleway|Righteous|Roboto+Mono|Sacramento|Satisfy|Sen|Source+Sans+Pro|Spartan|Titillium+Web|Ubuntu|Ultra|Yellowtail&display=swap" rel="stylesheet">
+        
+   
+
+    <script src="index.js"></script>
+
+</head>
+<body>
+    <link rel="stylesheet" href="toastr.min.css">  
+    <script src="toastr.min.js"></script>
+
+    <div class="container-fluid">
+
+
+        <div class="toast">                         <!--notification-->
+            <div class="toast-header">
+              Status
+            </div>
+            <div class="toast-body">
+              Your information is submitted for enquiry. You will be contacted soon. Thank You
+            </div>
+        </div>
+
+
+        <div class="row">                           <!--Row1-->
+
+            <div class="col-md-12 seg1">
+                <img id="logo" src="logo_big.png">
+            </div>
+
+        </div>
+
+        <div class="row">                       <!--Row2-->
+
+            <div class="col-md-7 seg2">
+                <h1>" Confronts the most advanced Business Problems with</h1>
+                <p> Start the service before its too late</p>
+                <img src="logo_big.png" id="image2">
+
+                <a href="payment_form.htm"><button id="tour_b1"><i class="fa fa-dollar"></i>  Pay Now</button></a>
+
+            </div>
+
+            <div class="col-md-5 seg2_2">
+
+                <div class="col-md-10 form_div">
+
+                   <p id="p1">We will get in touch soon!</p>
+                    <i class="fa fa-user" id="image1"></i>
+
+                    <form name="myForm" ng-app="myApp" ng-controller="validateCtrl" novalidate>
+
+                        <input type="text" placeholder="First Name*" name="firstname" id="i1" ng-model="firstname" required>
+                            <span ng-show="myForm.firstname.$dirty && myForm.firstname.$invalid"></span>
+                            <span id="s1" ng-show="myForm.firstname.$error.required">firstname is required.</span>
+                        <input type="text" placeholder="Last Name*" name="lastname" id="i2" ng-model="lastname" required><br>
+                            <span ng-show="myForm.lastname.$dirty && myForm.lastname.$invalid"></span>
+                            <span id="s2" ng-show="myForm.lastname.$error.required">lastname is required.</span>
+                        <input type="email" placeholder="Work Email*" name="email" id="i3" ng-model="email" required><br>
+                            <span ng-show="myForm.email.$error.email">*Invalid Email Address</span>
+                            <span id="s3" ng-show="myForm.email.$error.required">*Email Required</span>
+                            <span ng-show="myForm.email.$dirty && myForm.email.$invalid"></span>
+                        <input type="text" placeholder="Monthly Advertising Budget*" name="budget" id="i4" ng-model="budget" required><br>
+                            <span ng-show="myForm.budget.$dirty && myForm.budget.$invalid"></span>
+                            <span id="s4" ng-show="myForm.budget.$error.required">Budget is required.</span>
+                        <input type="tel" placeholder="Mobile*" maxlength="10" name="mobile" id="i5" ng-model="mobile" required><br>
+                            <span ng-show="myForm.mobile.$dirty && myForm.mobile.$invalid"></span>
+                            <span id="s5" ng-show="myForm.mobile.$error.required">mobile is required.</span>
+
+                        <input type="submit" value="Enquiry" name="button" id="b1" ng-disabled="myForm.firstname.$dirty && myForm.firstname.$invalid || myForm.lastname.$dirty && myForm.lastname.$invalid || myForm.email.$dirty && myForm.email.$invalid || myForm.budget.$dirty && myForm.budget.$invalid || myForm.mobile.$dirty && myForm.mobile.$invalid ">
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="row">                           <!--Row3-->
+
+            <div class="col-md-12 seg3">
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <script>
+        $("document").ready(function(){
+
+            var k1 = $("#i1").val();
+            var k2 = $("#i2").val();
+            var k3 = $("#i3").val();
+            var k4 = $("#i4").val();
+            var k5 = $("#i5").val();
+
+            if(k1==""||k2==""||k3==""||k4==""||k5==""){
+
+                $("#b1").attr("disabled", true);
+
+            }else{
+                $("#b1").attr("disabled", false);
+            }
+
+
+
+            //$("#i1").click(function(){
+
+            //    $("#i1").css("border-color","green");
+
+            //});
+
+
+            $(".toast").css("position","absolute");
+            $(".toast").css("z-index",5);
+
+            
+            $("#b1").click(function(){
+
+                $(".toast").toast({delay:2500});
+                $(".toast").toast("show");
+               
+                $(".toast").css("position","absolute");
+                $(".toast").css("z-index",5);
+                $(".toast").css("background","rgb(6, 170, 74)");
+                $(".toast").css("top","50px");
+                $(".toast").css("right","10px");
+                $(".toast").css("width","300px");
+                $(".toast").css("color","white");
+
+
+            });
+
+
+
+           
+
+            
+
+            
+
+
+        });
+    </script>
+
+
+  
+
+
+
+
+
+
+   
+
+
+
+
+
+    
+</body>
+</html>
