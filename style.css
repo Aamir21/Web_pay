@@ -1,0 +1,330 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.seg1{
+    height: 110px;
+    background-color: rgb(251, 251, 251);
+}
+
+#logo{
+    width: 120px;
+    padding-top: 20px;
+}
+
+.seg2{
+    height: 550px;
+    background:linear-gradient(90deg,whitesmoke, rgb(252, 228, 184));
+    
+}
+
+#image2{
+    position: absolute;
+    width: 170px;
+    top: 178px;
+    left: 515px;
+    opacity: .5;
+    
+}
+
+.seg2 h1{
+    font-family: League Spartan;
+    font-size: 65px;
+    color: rgb(90, 89, 89);
+    margin-top: 30px;
+}
+
+.seg2 p{
+    font-family: Spartan;
+    font-size: 20px;
+}
+
+
+#tour_b1{
+    width: 190px;
+    height: 55px;
+    background:linear-gradient(90deg,rgb(243, 31, 31), rgb(218, 19, 19) );
+    border: solid thin transparent;
+    border-radius: 10px;
+    font-family: "Poppins";
+    position: absolute;
+    top: 400px;
+    left: 50px;
+    box-shadow: 2px 8px 30px rgb(243, 31, 31);
+    color: white;
+    outline: none;
+
+}
+
+
+
+
+.seg2_2{
+    height: 550px;
+    
+    background:rgb(252, 228, 184);
+    display: flex;
+    
+}
+
+.form_div{
+    height: 490px;
+    background:linear-gradient(60deg, whitesmoke,rgb(240, 239, 239));
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+    border: solid thin whitesmoke;
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px gainsboro;
+    
+}
+
+.form_div form span{
+    position: absolute;
+    left: 250px;
+    font-family: "Poppins";
+    font-size: 11px;
+    color: crimson;
+}
+
+#s1{
+    position: absolute;
+    left: 50px;
+    margin-top: 65px;
+}
+#s2{
+    margin-left: 10px;
+}
+
+#s3{
+    margin-left: 40px;
+}
+
+#s4{
+    margin-left: 30px;
+}
+
+#s5{
+    position: absolute;
+    left: 80px;
+}
+
+
+
+
+
+.form_div form input{
+    margin-top: 30px;
+    border: solid thin gainsboro;
+    border-radius: 7px;
+    height: 35px;
+    padding-left: 5px;
+    outline: none;
+    
+}
+
+#image1{
+    position: absolute;
+    font-size: 60px;
+    top: 50px;
+    color: rgb(6, 170, 74);
+    opacity: 0.7;
+}
+
+#p1{
+    position: absolute;
+    font-size: 22px;
+    font-family: Advent+pro;
+    font-weight: bold;
+    margin-top: 17px;
+    color: rgb(83, 83, 83);
+}
+
+#i3{
+    width: 366px;
+}
+
+#i4{
+    width: 366px;
+}
+
+
+.form_div form{
+    margin-top: 100px;
+}
+
+
+.form_div h2{
+    position: absolute;
+}
+
+
+
+
+#b1{
+    width: 180px;
+    border: solid thin rgb(243, 31, 31);
+    box-shadow: 0px 0px 3px gray;
+    background:linear-gradient(90deg, crimson,rgb(243, 31, 31));
+    margin-top: 80px;
+    font-family: "Poppins";
+    font-size: 14px;
+   
+}
+
+
+
+#b1:hover{
+    cursor: pointer;
+  
+    
+}
+
+
+
+.form_div form input::placeholder{
+    font-family: "Poppins";
+    position:absolute;
+    padding-left: 5px;
+    font-size: 11px;
+    padding-top: 9px;
+    display: inline-block;
+
+}
+
+
+.seg3{
+    height: 550px;
+    background-color: cornsilk;
+
+
+}
+
+
+
+
+
+
+
+
+
+/*Mobile View*/
+
+
+
+@media only screen and (max-width: 600px){
+
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    
+    }
+
+    .seg2{
+        background-color: green;
+        height: 300px;
+        
+        
+    }
+
+    .seg2_2{
+        height: 620px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .form_div{
+        height: 550px;
+        padding:0px;
+        margin: 0px;
+        border: solid thin transparent;
+        display: inline-flex;
+       
+    }
+
+
+    .form_div form input{
+        margin-top: 15px;
+        border: solid thin gainsboro;
+        border-radius: 7px;
+        height: 40px;
+        padding-left: 0px;
+        padding-right: 0px;
+        box-sizing: border-box;
+        max-width: 300px;
+        
+    }
+
+    .form_div form input::placeholder{
+        color: black;
+        font-size: 15px;
+    }
+
+    #i3,#i1,#i2,#i4,#i5{
+        width: 330px
+    }
+
+    #b1{
+        width: 300px;
+        height: 55px;
+        font-size: 18px;
+
+    }
+
+    
+
+    #s1,#s2,#s3,#s4,#s5{
+
+        position: absolute;
+        display: none;
+
+    }
+
+
+    .seg2 h1{
+        font-family: League Spartan;
+        font-size: 25px;
+        color: rgb(90, 89, 89);
+        margin-top: 30px;
+    }
+
+    .seg2 p{
+        font-size: 12px;
+
+    }
+
+    #tour_b1{
+        margin-top: -180px;
+        margin-left: -30px;
+        box-sizing: border-box;
+        width:auto;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+
+
+    #image2{
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+    
+}
+
+
+
+
+
